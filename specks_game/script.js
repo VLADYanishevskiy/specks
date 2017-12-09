@@ -11,6 +11,7 @@ for(var i = 0 ; i < 15 ; i++){
         jQuery.attr( cur_obj , "data-free" , "1")
         console.log(cur_obj);
         console.log(jQuery.attr( cur_obj , "data-free"));
+        $(cur_obj).html(i).css("text-align" , "center");
     }
     else{
           
@@ -22,3 +23,20 @@ for(var i = 0 ; i < 15 ; i++){
     
     
 }
+
+
+$("td").click(function(){
+    
+    var index = jQuery.attr( this , "data-index" );
+    
+    var obj = objects[Number(index) - 5];
+    console.log(obj);
+    if( jQuery.attr( obj, "data-free" ) === "0"    )
+    {
+        alert(index);
+    }
+    else{
+        alert("no");
+    }
+        
+});
