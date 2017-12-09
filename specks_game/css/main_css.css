@@ -5,10 +5,15 @@ td{
 }
 
 table{
-    margin :0 auto;
-    margin-top:40px;
+    margin-left: 200px;
+    float : left;
+}
+div{
+    float:left;
+    margin-left: 100px;
 }
 body{
     font-size: 40px;
     font-weight: 600;
+    text-align: center;
 }
